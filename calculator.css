@@ -1,0 +1,141 @@
+/* represents body copy in calculator */
+
+body {
+  font-family: sans-serif;
+  background: rgb(97, 97, 97);
+}
+
+/* represents calculator itself */
+
+#container {
+  height: 525px;
+  width: 380px;
+  margin: 100px auto;
+  background: #f7f7f7;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+}
+
+/* represents Blue heading  */
+
+h1 {
+  background: #0000ff;
+  color: white;
+  margin: 0;
+  padding: 10px 100px;
+  text-transform: initial;
+  font-size: 18px;
+  font-weight: normal;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+/* represents 'bill, tip% and # of people' sections  */
+
+p {
+  padding-left: 10px;
+}
+
+/* represents 'bill text box'  */
+
+form input[type="text"] {
+  width: 100px;
+  border-radius: 5px;
+}
+
+/* represents both size of bill box as well as typed text into bill  */
+
+#billamt {
+  font-size: 14px;
+  color: black(240, 6, 6);
+  background-color: #f7f7f7;
+  width: 90%;
+  padding: 5px 5px 8px 8px;
+  margin-left: 10px;
+}
+
+#billamt:focus {
+  background: #fff;
+  border: 3px solid #2980b9;
+  outline: salmon;
+}
+
+/* represents size of people box as well as typed text into bill  */
+
+#peopleamt {
+  width: 90%;
+  padding: 5px 5px 8px 8px;
+  margin-left: 10px;
+  color: black;
+  background-color: #f7f7f7;
+  font-size: 14px;
+  border-radius: 5px;
+}
+
+/* represents 'Tip% field'  */
+
+#serviceQual {
+  padding: 5px 5px 8px 8px;
+  margin-left: 10px;
+  font-size: 14px;
+  border-radius: 5px;
+  width: 90%;
+}
+
+/* how to calculate totals without a button  */
+
+button {
+  text-transform: uppercase;
+  font-weight: bold;
+  display: block;
+  margin: 30px auto;
+  background: #AD133A;
+  border-radius: 5px;
+  width: 200px;
+  height: 50px;
+  font-size: 17px;
+  color: white;
+}
+
+button:hover {
+  background: #4c2827;
+  border-bottom-color: #111;
+}
+
+button:active {
+  position: relative;
+  top: 1px;
+}
+
+/* represents actual total Tip number, appears on right after calculate  */
+
+#totalTip {
+  font-size: 25px;
+  margin-top: 5px;
+  text-align: center;
+}
+
+#totalTip:before {
+  content: "Tip per person";
+  font-size: 20px;
+  font-weight: bold;
+  display: block;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+#totalTip sup {
+  font-size: 20px;
+  top: -18px;
+}
+
+/* represents total Tip amount, appears after calculate  */
+
+#totalTip small {
+  font-size: 20px;
+  font-weight: bold;
+  display: initial;
+}
+
